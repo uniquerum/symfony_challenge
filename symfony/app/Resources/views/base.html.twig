@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+ck title %}My cool blog posts{% endblock %}
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <img src="{{ asset('images/tes_logo') }}" alt="Company Logo" />        
+    </div>
+    <div id="content">
+      {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>
